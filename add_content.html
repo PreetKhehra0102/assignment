@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Content</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Include the header file -->
+  <header class="header">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">Your Website</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="manage_content.html">Manage</a></li>
+        <li class="nav-item"><a href="add_content.html">Add</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div class="container">
+    <h1>Add Content</h1>
+    <form action="create.php" method="POST" enctype="multipart/form-data">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="image">Image:</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <input type="submit" value="Add">
+    </form>
+    <script src="validation.js"></script>
+  </div>
+
+  <!-- Include the footer file -->
+  <footer class="footer">
+    <p>&copy; 2023 Your Website. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
